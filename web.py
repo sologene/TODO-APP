@@ -18,5 +18,4 @@ for todo in todos:
         f.upd_todo(todos)
         del st.session_state[todo]
         st.rerun()
-st.session_state
 st.text_input(label="Enter a todo", placeholder="Add a new Todo", on_change=add_todo,key='new_todo')
